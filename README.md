@@ -70,7 +70,15 @@
 
 **결과**
 
-<img width="500" alt="결제 시스템 1차 성능 개선 - 애플리케이션 구조 개선" src="https://github.com/user-attachments/assets/569ae14b-3b62-4d94-a86b-9e5dcd447f11"/>
+**개선 전**
+![방법0-0before 동기 방식 ic10 200ms vuser100 300s](https://github.com/user-attachments/assets/0950d159-8d71-42e8-b183-ca8eac497cdb)
+
+**개선 후**
+![방법 0 이벤트 리스너 도입 후 기존 코드 데드락에 대한 아무런 조치가 없음 ic10 200ms vuser100 300s (2) ](https://github.com/user-attachments/assets/7f5b13d9-b00a-4815-b524-0a92f796567e)
+
+**개선 전/후 비교**
+![개선1차](https://github.com/user-attachments/assets/e6ee2cd2-d507-462c-bf86-033258a861be)
+
 
 #### 2️⃣ 결제 시스템 에러 응답 개선 - DB 데드락 해결
 
@@ -92,8 +100,7 @@
     - 단순 코드 추가로도 **응답 안정성과 성능 모두 확보**, 실제 테스트에서 **에러 응답률 0% 달성**
 
 **결과**
-
-<img width="800" alt="결제 시스템 에러 응답 개선 - DB 데드락 해결" src="https://github.com/user-attachments/assets/416aba9e-6380-4d0b-aa2a-aaacbf8299ca"/>
+![결제 시스템 에러 응답 개선 - DB 데드락 해결](https://github.com/user-attachments/assets/416aba9e-6380-4d0b-aa2a-aaacbf8299ca)
 
 #### **3️⃣ 결제 시스템 2차 추가 성능 개선 - Redis 기반 Lock Free 구조 도입**
 
@@ -116,8 +123,11 @@
     - **StockHistory 등의 DB 이력 정보는 이벤트 리스너에서 비동기 저장**하여 안정성과 데이터 정합성 확보
 
 **결과**
+![방법 6  분산락으로 동시성 제어, 레디스로 재고 차감 ic10 200ms vuser100 300s (1)](https://github.com/user-attachments/assets/67e929c3-7ff9-4fe5-93d5-951634ea3809)
 
-<img width="500" alt="DB 재시도 vs 분산락 vs 레디스 재고 관리" src="https://github.com/user-attachments/assets/0ff9a06c-abe2-49d3-9e00-f9a7c0054632"/>
+**추개 개선 전/후 비교**
+![2차 성능 개선](https://github.com/user-attachments/assets/f622dc3e-ce5f-4712-a483-420b2db3518b)
+
 
 #### **4️⃣ 검색 쿼리 성능 병목 개선 - 검색 평균 응답 시간 10.7초 → 0.036초로 단축**
 
@@ -141,8 +151,7 @@
     - **불필요한 LEFT JOIN → INNER JOIN**으로 전환하여 읽기 범위 축소
 
  **결과** 
- 
-<img width="800" alt="최종  검색 성능 개선 후" src="https://github.com/user-attachments/assets/cd821a8b-8fe0-456e-bf0b-8638af8bb229"/>
+![검색 성능 개선 후](https://github.com/user-attachments/assets/cd821a8b-8fe0-456e-bf0b-8638af8bb229)
 
 ### 🚀 트러블 슈팅
 
