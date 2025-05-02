@@ -22,7 +22,7 @@
 
 ### 🌏 서버 아키텍쳐
 
-추가할 것!
+<img width="700" alt="서버 아키텍처" src="https://github.com/user-attachments/assets/b59cf9a8-b8a0-4010-8dc4-3c6794de4129" />
 
 <br>
 <br>
