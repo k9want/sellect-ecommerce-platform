@@ -15,14 +15,14 @@
 
 ### 📚 기술 스택
 
-<img width="700" alt="기술스택" src="https://github.com/user-attachments/assets/41e9d66b-da1e-42d2-8f59-6b3c6efd5c12" />
+<img width="600" alt="기술스택" src="https://github.com/user-attachments/assets/1c9e5d1f-1a4a-417e-a82f-f5e4f696ec9b" />
 
 <br>
 <br>
 
 ### 🌏 서버 아키텍쳐
 
-<img width="700" alt="서버 아키텍처" src="https://github.com/user-attachments/assets/b59cf9a8-b8a0-4010-8dc4-3c6794de4129" />
+<img width="600" alt="서버 아키텍처" src="https://github.com/user-attachments/assets/b59cf9a8-b8a0-4010-8dc4-3c6794de4129" />
 
 <br>
 <br>
