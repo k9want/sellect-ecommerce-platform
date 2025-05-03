@@ -81,7 +81,8 @@
 ![방법 0 이벤트 리스너 도입 후 기존 코드 데드락에 대한 아무런 조치가 없음 ic10 200ms vuser100 300s (2) ](https://github.com/user-attachments/assets/7f5b13d9-b00a-4815-b524-0a92f796567e)
 
 **개선 전/후 비교**
-![개선1차](https://github.com/user-attachments/assets/e6ee2cd2-d507-462c-bf86-033258a861be)
+![개선 1차 비교](https://github.com/user-attachments/assets/88a6fff8-8176-4155-8123-a06df1111a53)
+
 
 
 #### 2️⃣ 결제 시스템 에러 응답 개선 - DB 데드락 해결
@@ -129,7 +130,8 @@
 ![방법 6  분산락으로 동시성 제어, 레디스로 재고 차감 ic10 200ms vuser100 300s (1)](https://github.com/user-attachments/assets/67e929c3-7ff9-4fe5-93d5-951634ea3809)
 
 **추개 개선 전/후 비교**
-![2차 성능 개선](https://github.com/user-attachments/assets/f622dc3e-ce5f-4712-a483-420b2db3518b)
+![2차 개선 비교](https://github.com/user-attachments/assets/1594eae4-2c2b-4072-9bdb-df52a5b3e078)
+
 
 
 #### **4️⃣ 검색 쿼리 성능 개선 - 검색 쿼리 실행 시간 4.7초 → 0.005초로 단축**
