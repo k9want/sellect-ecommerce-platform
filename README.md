@@ -106,7 +106,7 @@
 **결과**
 ![결제 시스템 에러 응답 개선 - DB 데드락 해결](https://github.com/user-attachments/assets/416aba9e-6380-4d0b-aa2a-aaacbf8299ca)
 
-#### **3️⃣ 결제 시스템 2차 추가 성능 개선 - Redis 기반 Lock Free 구조 도입**
+#### **3️⃣ 결제 시스템 2차 추가 성능 개선 - Redis 기반 재고 시스템 도입**
 
 **문제 상황**
 
@@ -117,7 +117,7 @@
 
 **해결 방법**
 
-- **Redis 기반 재고 차감 구조로 전환 (Lock Free 처리)**
+- **Redis 기반 재고 차감 구조로 전환**
     - 재고 상태를 Redis로 이전하고, Lua 스크립트를 통해 **원자적 재고 차감 처리**
     - 기존 `Pessimistic Write` 제거, 재고 차감 시 발생하던 락 경합 구조 자체 제거
 - **Redis TTL 락으로 중복 결제 방지**
